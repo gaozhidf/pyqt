@@ -1,0 +1,11 @@
+<RCC>  
+<qresource>
+    <file>icon/start.png</file>
+    <file>icon/stop.png</file>
+    <file>icon/pause.png</file>
+    <file>icon/new.png</file>
+    <file>icon/new one.png</file>
+    <file>icon/close.png</file>
+    <file>icon/close window.png</file>
+</qresource>
+</RCC> 

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mynote</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QWidget" name="widgetTop" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color:#7D9EC0;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="maximumSize">
+            <size>
+             <width>782</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Mynote</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_close">
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: transparent;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icon/close window.png</normaloff>:/icon/close window.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="widgetLeft" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color:#4A708B;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-color: transparent;
+border-style:outset;
+border-width: 0px;
+padding: 5px 0;
+color: #fff;
+}</string>
+          </property>
+          <property name="text">
+           <string>New Note</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icon.qrc">
+            <normaloff>:/icon/new one.png</normaloff>:/icon/new one.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeView" name="treeView">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widgetMiddle" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: #CCCCCC;
+}
+QLineEdit{
+border-radius: 10px;
+padding: 5px 10px;
+margin: 0 10%;
+background-color: white;
+border: 1px solid #c9c9c9;
+color: #1b1b1e;
+}
+QLineEdit:hover{
+background-color: white;
+border: 1px solid #969696;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+background-color: #B0B0B0;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListView" name="listView">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widgetRight" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color:#D4D4D4;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayoutRight">
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
